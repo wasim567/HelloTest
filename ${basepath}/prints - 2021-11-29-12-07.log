@@ -1,0 +1,460 @@
+11:56:33:943 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J2 as the default logging framework
+11:56:33:951 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+11:56:33:951 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+11:56:33:955 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@24d09c1
+11:56:33:969 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+11:56:33:970 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 11
+11:56:33:971 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+11:56:33:973 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+11:56:33:973 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+11:56:33:973 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:253) ~[netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:247) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:112) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:221) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:200) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111) [async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90) [async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32) [async-http-client-2.12.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:114) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:57) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:163) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:77) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35) [selenium-chromium-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46) [selenium-chrome-driver-4.0.0.jar:?]
+	at Test1.GreenkartPractice.main(GreenkartPractice.java:24) [bin/:?]
+11:56:33:996 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+11:56:33:997 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @54a67a45
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:361) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:591) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:558) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:375) ~[netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:366) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:112) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:221) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:200) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111) [async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90) [async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32) [async-http-client-2.12.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:114) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:57) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:163) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:77) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35) [selenium-chromium-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46) [selenium-chrome-driver-4.0.0.jar:?]
+	at Test1.GreenkartPractice.main(GreenkartPractice.java:24) [bin/:?]
+11:56:33:998 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+11:56:33:999 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+11:56:34:000 [main] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 2090860544 bytes (maybe)
+11:56:34:000 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\kwasi\AppData\Local\Temp (java.io.tmpdir)
+11:56:34:001 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+11:56:34:001 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+11:56:34:002 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+11:56:34:002 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+11:56:34:003 [main] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+11:56:34:003 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+11:56:34:009 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+11:56:34:029 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+11:56:34:029 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+11:56:34:319 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1] 
+11:56:34:320 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+11:56:34:342 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+11:56:34:348 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+11:56:34:348 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+11:56:34:355 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@466cf502
+11:56:34:356 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@407cf41
+11:56:34:357 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6815c5f2
+11:56:34:357 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@46cc127b
+11:56:34:358 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@60094a13
+11:56:34:358 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5aceec94
+11:56:34:359 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c32886a
+11:56:34:360 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3a4b0e5d
+11:56:34:360 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@10b892d5
+11:56:34:361 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d3f761a
+11:56:34:361 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3546d80f
+11:56:34:362 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@579d011c
+11:56:34:362 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3670f00
+11:56:34:363 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@452e26d0
+11:56:34:363 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@46ab18da
+11:56:34:364 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@790174f2
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+11:56:34:385 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+11:56:34:394 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+11:56:34:394 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+11:56:34:394 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+11:56:35:113 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 20288 (auto-detected)
+11:56:35:115 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+11:56:35:115 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+11:56:35:253 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+11:56:35:254 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+11:56:35:388 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 80:45:dd:ff:fe:e5:ae:cf (auto-detected)
+11:56:35:428 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+11:56:35:429 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+11:56:35:429 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2a167545
+11:56:35:446 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+11:56:35:446 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+11:56:35:446 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+11:56:35:446 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+11:56:35:446 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+11:56:36:382 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+11:56:36:483 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xfeb7ce7e38afa0a2
+11:56:36:532 [main] DEBUG Test1.GreenkartPractice - Launching the site
+11:56:37:696 [main] INFO  Test1.GreenkartPractice - Site has been launced successfully
+11:56:37:746 [main] DEBUG Test1.GreenkartPractice - Starting the loop for iteration
+11:56:37:746 [main] INFO  Test1.GreenkartPractice - iterating the 0 st/rd item
+11:56:37:767 [main] INFO  Test1.GreenkartPractice - got the text of 0 st item
+11:56:37:767 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 0 st item
+11:56:37:768 [main] INFO  Test1.GreenkartPractice - Splitted the text of 0 st item
+11:56:37:768 [main] DEBUG Test1.GreenkartPractice - Checking for the 0 item text containg the expected item or not
+11:56:37:768 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 0 st iteration
+11:56:37:768 [main] INFO  Test1.GreenkartPractice - iterating the 1 st/rd item
+11:56:37:788 [main] INFO  Test1.GreenkartPractice - got the text of 1 st item
+11:56:37:789 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 1 st item
+11:56:37:789 [main] INFO  Test1.GreenkartPractice - Splitted the text of 1 st item
+11:56:37:789 [main] DEBUG Test1.GreenkartPractice - Checking for the 1 item text containg the expected item or not
+11:56:37:789 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 1 st iteration
+11:56:37:789 [main] INFO  Test1.GreenkartPractice - iterating the 2 st/rd item
+11:56:37:812 [main] INFO  Test1.GreenkartPractice - got the text of 2 st item
+11:56:37:813 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 2 st item
+11:56:37:813 [main] INFO  Test1.GreenkartPractice - Splitted the text of 2 st item
+11:56:37:813 [main] DEBUG Test1.GreenkartPractice - Checking for the 2 item text containg the expected item or not
+11:56:37:813 [main] INFO  Test1.GreenkartPractice - 2 st item text contains the expected item
+11:56:37:813 [main] DEBUG Test1.GreenkartPractice - Clicking on the Add to cart button for 1 st expected item
+11:56:37:893 [main] INFO  Test1.GreenkartPractice - Clicked on the Add to cart button for 1 st expected item
+11:56:37:893 [main] DEBUG Test1.GreenkartPractice - checking whether all the needed items are added to cart or not
+11:56:37:893 [main] INFO  Test1.GreenkartPractice - All the iteems needed aren't added to cart
+11:56:37:893 [main] INFO  Test1.GreenkartPractice - iterating the 3 st/rd item
+11:56:37:919 [main] INFO  Test1.GreenkartPractice - got the text of 3 st item
+11:56:37:919 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 3 st item
+11:56:37:919 [main] INFO  Test1.GreenkartPractice - Splitted the text of 3 st item
+11:56:37:919 [main] DEBUG Test1.GreenkartPractice - Checking for the 3 item text containg the expected item or not
+11:56:37:919 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 3 st iteration
+11:56:37:919 [main] INFO  Test1.GreenkartPractice - iterating the 4 st/rd item
+11:56:37:943 [main] INFO  Test1.GreenkartPractice - got the text of 4 st item
+11:56:37:943 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 4 st item
+11:56:37:943 [main] INFO  Test1.GreenkartPractice - Splitted the text of 4 st item
+11:56:37:943 [main] DEBUG Test1.GreenkartPractice - Checking for the 4 item text containg the expected item or not
+11:56:37:943 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 4 st iteration
+11:56:37:943 [main] INFO  Test1.GreenkartPractice - iterating the 5 st/rd item
+11:56:37:965 [main] INFO  Test1.GreenkartPractice - got the text of 5 st item
+11:56:37:965 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 5 st item
+11:56:37:965 [main] INFO  Test1.GreenkartPractice - Splitted the text of 5 st item
+11:56:37:965 [main] DEBUG Test1.GreenkartPractice - Checking for the 5 item text containg the expected item or not
+11:56:37:966 [main] INFO  Test1.GreenkartPractice - 5 st item text contains the expected item
+11:56:37:966 [main] DEBUG Test1.GreenkartPractice - Clicking on the Add to cart button for 2 st expected item
+11:56:38:025 [main] INFO  Test1.GreenkartPractice - Clicked on the Add to cart button for 2 st expected item
+11:56:38:025 [main] DEBUG Test1.GreenkartPractice - checking whether all the needed items are added to cart or not
+11:56:38:025 [main] INFO  Test1.GreenkartPractice - All the iteems needed aren't added to cart
+11:56:38:025 [main] INFO  Test1.GreenkartPractice - iterating the 6 st/rd item
+11:56:38:045 [main] INFO  Test1.GreenkartPractice - got the text of 6 st item
+11:56:38:045 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 6 st item
+11:56:38:045 [main] INFO  Test1.GreenkartPractice - Splitted the text of 6 st item
+11:56:38:045 [main] DEBUG Test1.GreenkartPractice - Checking for the 6 item text containg the expected item or not
+11:56:38:045 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 6 st iteration
+11:56:38:045 [main] INFO  Test1.GreenkartPractice - iterating the 7 st/rd item
+11:56:38:066 [main] INFO  Test1.GreenkartPractice - got the text of 7 st item
+11:56:38:066 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 7 st item
+11:56:38:066 [main] INFO  Test1.GreenkartPractice - Splitted the text of 7 st item
+11:56:38:066 [main] DEBUG Test1.GreenkartPractice - Checking for the 7 item text containg the expected item or not
+11:56:38:066 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 7 st iteration
+11:56:38:066 [main] INFO  Test1.GreenkartPractice - iterating the 8 st/rd item
+11:56:38:103 [main] INFO  Test1.GreenkartPractice - got the text of 8 st item
+11:56:38:103 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 8 st item
+11:56:38:104 [main] INFO  Test1.GreenkartPractice - Splitted the text of 8 st item
+11:56:38:104 [main] DEBUG Test1.GreenkartPractice - Checking for the 8 item text containg the expected item or not
+11:56:38:104 [main] INFO  Test1.GreenkartPractice - 8 st item text contains the expected item
+11:56:38:104 [main] DEBUG Test1.GreenkartPractice - Clicking on the Add to cart button for 3 st expected item
+11:56:38:155 [main] INFO  Test1.GreenkartPractice - Clicked on the Add to cart button for 3 st expected item
+11:56:38:155 [main] DEBUG Test1.GreenkartPractice - checking whether all the needed items are added to cart or not
+11:56:38:155 [main] INFO  Test1.GreenkartPractice - All the needed items are added to cart and stoping the searching for items
+11:56:38:155 [main] DEBUG Test1.GreenkartPractice - Clicking on  cart icon
+11:56:38:205 [main] INFO  Test1.GreenkartPractice - Clickied on cart  Icon
+11:56:38:205 [main] DEBUG Test1.GreenkartPractice - Clicking on Proceed to checkout button
+11:56:38:255 [main] INFO  Test1.GreenkartPractice - Clicked on proceed to checkout button
+11:56:38:258 [main] DEBUG Test1.GreenkartPractice - Wating for display of Enter promo code field
+11:56:39:793 [main] INFO  Test1.GreenkartPractice - Promocode text field displayed
+11:56:39:793 [main] DEBUG Test1.GreenkartPractice - Entering promocode
+11:56:39:859 [main] INFO  Test1.GreenkartPractice - Entered promo code
+11:56:39:859 [main] DEBUG Test1.GreenkartPractice - Clicking on Apply button
+11:56:39:903 [main] INFO  Test1.GreenkartPractice - Clicked on Apply button
+11:56:39:903 [main] DEBUG Test1.GreenkartPractice - Waiting for Order confirmation text
+11:56:45:095 [main] INFO  Test1.GreenkartPractice - Order placement text displayed
+12:05:11:118 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J2 as the default logging framework
+12:05:11:123 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+12:05:11:124 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+12:05:11:127 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4af0df05
+12:05:11:141 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+12:05:11:141 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 11
+12:05:11:142 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+12:05:11:143 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+12:05:11:144 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+12:05:11:145 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:253) ~[netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:247) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:112) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:221) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:200) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111) [async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90) [async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32) [async-http-client-2.12.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:114) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:57) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:163) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:77) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35) [selenium-chromium-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46) [selenium-chrome-driver-4.0.0.jar:?]
+	at Test1.GreenkartPractice.main(GreenkartPractice.java:24) [bin/:?]
+12:05:11:159 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+12:05:11:160 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @704f1591
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:361) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:591) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:558) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:375) ~[netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:366) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:112) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:221) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:200) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111) [async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90) [async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32) [async-http-client-2.12.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:114) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:57) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:163) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:77) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35) [selenium-chromium-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46) [selenium-chrome-driver-4.0.0.jar:?]
+	at Test1.GreenkartPractice.main(GreenkartPractice.java:24) [bin/:?]
+12:05:11:162 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+12:05:11:162 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+12:05:11:163 [main] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 2090860544 bytes (maybe)
+12:05:11:163 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\kwasi\AppData\Local\Temp (java.io.tmpdir)
+12:05:11:163 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+12:05:11:164 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+12:05:11:165 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+12:05:11:165 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+12:05:11:166 [main] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+12:05:11:166 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+12:05:11:173 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+12:05:11:188 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+12:05:11:189 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+12:05:11:477 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1] 
+12:05:11:477 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+12:05:11:496 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+12:05:11:501 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+12:05:11:501 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+12:05:11:512 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1cf2fed4
+12:05:11:513 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5b800468
+12:05:11:514 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2e185cd7
+12:05:11:514 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7e1a1da6
+12:05:11:515 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5f7f2382
+12:05:11:515 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@407cf41
+12:05:11:516 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6815c5f2
+12:05:11:516 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@46cc127b
+12:05:11:517 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@60094a13
+12:05:11:517 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5aceec94
+12:05:11:518 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c32886a
+12:05:11:519 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3a4b0e5d
+12:05:11:519 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@10b892d5
+12:05:11:520 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d3f761a
+12:05:11:521 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3546d80f
+12:05:11:521 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@579d011c
+12:05:11:537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
+12:05:11:537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
+12:05:11:537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+12:05:11:537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+12:05:11:537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+12:05:11:537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+12:05:11:537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+12:05:11:537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+12:05:11:538 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+12:05:11:538 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+12:05:11:538 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+12:05:11:538 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+12:05:11:545 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+12:05:11:545 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+12:05:11:546 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+12:05:12:266 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 20280 (auto-detected)
+12:05:12:268 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+12:05:12:269 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+12:05:12:405 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+12:05:12:406 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+12:05:12:543 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 80:45:dd:ff:fe:e5:ae:cf (auto-detected)
+12:05:12:584 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+12:05:12:585 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+12:05:12:585 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@43a588eb
+12:05:12:603 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+12:05:12:603 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+12:05:12:603 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+12:05:12:603 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+12:05:12:603 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+12:05:13:355 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+12:05:13:461 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x88a64c30dd9df45e
+12:05:13:503 [main] DEBUG Test1.GreenkartPractice - Launching the site
+12:05:15:202 [main] INFO  Test1.GreenkartPractice - Site has been launced successfully
+12:05:15:234 [main] DEBUG Test1.GreenkartPractice - Starting the loop for iteration
+12:05:15:234 [main] INFO  Test1.GreenkartPractice - iterating the 0 st/rd item
+12:05:15:275 [main] INFO  Test1.GreenkartPractice - got the text of 0 st item
+12:05:15:277 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 0 st item
+12:05:15:277 [main] INFO  Test1.GreenkartPractice - Splitted the text of 0 st item
+12:05:15:277 [main] DEBUG Test1.GreenkartPractice - Checking for the 0 item text containg the expected item or not
+12:05:15:277 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 0 st iteration
+12:05:15:277 [main] INFO  Test1.GreenkartPractice - iterating the 1 st/rd item
+12:05:15:302 [main] INFO  Test1.GreenkartPractice - got the text of 1 st item
+12:05:15:303 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 1 st item
+12:05:15:303 [main] INFO  Test1.GreenkartPractice - Splitted the text of 1 st item
+12:05:15:303 [main] DEBUG Test1.GreenkartPractice - Checking for the 1 item text containg the expected item or not
+12:05:15:303 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 1 st iteration
+12:05:15:303 [main] INFO  Test1.GreenkartPractice - iterating the 2 st/rd item
+12:05:15:330 [main] INFO  Test1.GreenkartPractice - got the text of 2 st item
+12:05:15:330 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 2 st item
+12:05:15:330 [main] INFO  Test1.GreenkartPractice - Splitted the text of 2 st item
+12:05:15:330 [main] DEBUG Test1.GreenkartPractice - Checking for the 2 item text containg the expected item or not
+12:05:15:330 [main] INFO  Test1.GreenkartPractice - 2 st item text contains the expected item
+12:05:15:330 [main] DEBUG Test1.GreenkartPractice - Clicking on the Add to cart button for 1 st expected item
+12:05:15:411 [main] INFO  Test1.GreenkartPractice - Clicked on the Add to cart button for 1 st expected item
+12:05:15:411 [main] DEBUG Test1.GreenkartPractice - checking whether all the needed items are added to cart or not
+12:05:15:411 [main] INFO  Test1.GreenkartPractice - All the iteems needed aren't added to cart
+12:05:15:411 [main] INFO  Test1.GreenkartPractice - iterating the 3 st/rd item
+12:05:15:437 [main] INFO  Test1.GreenkartPractice - got the text of 3 st item
+12:05:15:437 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 3 st item
+12:05:15:437 [main] INFO  Test1.GreenkartPractice - Splitted the text of 3 st item
+12:05:15:437 [main] DEBUG Test1.GreenkartPractice - Checking for the 3 item text containg the expected item or not
+12:05:15:437 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 3 st iteration
+12:05:15:437 [main] INFO  Test1.GreenkartPractice - iterating the 4 st/rd item
+12:05:15:464 [main] INFO  Test1.GreenkartPractice - got the text of 4 st item
+12:05:15:464 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 4 st item
+12:05:15:464 [main] INFO  Test1.GreenkartPractice - Splitted the text of 4 st item
+12:05:15:464 [main] DEBUG Test1.GreenkartPractice - Checking for the 4 item text containg the expected item or not
+12:05:15:464 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 4 st iteration
+12:05:15:464 [main] INFO  Test1.GreenkartPractice - iterating the 5 st/rd item
+12:05:15:485 [main] INFO  Test1.GreenkartPractice - got the text of 5 st item
+12:05:15:486 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 5 st item
+12:05:15:486 [main] INFO  Test1.GreenkartPractice - Splitted the text of 5 st item
+12:05:15:486 [main] DEBUG Test1.GreenkartPractice - Checking for the 5 item text containg the expected item or not
+12:05:15:486 [main] INFO  Test1.GreenkartPractice - 5 st item text contains the expected item
+12:05:15:486 [main] DEBUG Test1.GreenkartPractice - Clicking on the Add to cart button for 2 st expected item
+12:05:15:548 [main] INFO  Test1.GreenkartPractice - Clicked on the Add to cart button for 2 st expected item
+12:05:15:548 [main] DEBUG Test1.GreenkartPractice - checking whether all the needed items are added to cart or not
+12:05:15:548 [main] INFO  Test1.GreenkartPractice - All the iteems needed aren't added to cart
+12:05:15:548 [main] INFO  Test1.GreenkartPractice - iterating the 6 st/rd item
+12:05:15:576 [main] INFO  Test1.GreenkartPractice - got the text of 6 st item
+12:05:15:576 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 6 st item
+12:05:15:577 [main] INFO  Test1.GreenkartPractice - Splitted the text of 6 st item
+12:05:15:577 [main] DEBUG Test1.GreenkartPractice - Checking for the 6 item text containg the expected item or not
+12:05:15:577 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 6 st iteration
+12:05:15:577 [main] INFO  Test1.GreenkartPractice - iterating the 7 st/rd item
+12:05:15:602 [main] INFO  Test1.GreenkartPractice - got the text of 7 st item
+12:05:15:602 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 7 st item
+12:05:15:602 [main] INFO  Test1.GreenkartPractice - Splitted the text of 7 st item
+12:05:15:602 [main] DEBUG Test1.GreenkartPractice - Checking for the 7 item text containg the expected item or not
+12:05:15:602 [main] INFO  Test1.GreenkartPractice - Expected item is not displayed in 7 st iteration
+12:05:15:602 [main] INFO  Test1.GreenkartPractice - iterating the 8 st/rd item
+12:05:15:627 [main] INFO  Test1.GreenkartPractice - got the text of 8 st item
+12:05:15:627 [main] DEBUG Test1.GreenkartPractice - Splitting the text of 8 st item
+12:05:15:627 [main] INFO  Test1.GreenkartPractice - Splitted the text of 8 st item
+12:05:15:627 [main] DEBUG Test1.GreenkartPractice - Checking for the 8 item text containg the expected item or not
+12:05:15:627 [main] INFO  Test1.GreenkartPractice - 8 st item text contains the expected item
+12:05:15:627 [main] DEBUG Test1.GreenkartPractice - Clicking on the Add to cart button for 3 st expected item
+12:05:15:681 [main] INFO  Test1.GreenkartPractice - Clicked on the Add to cart button for 3 st expected item
+12:05:15:682 [main] DEBUG Test1.GreenkartPractice - checking whether all the needed items are added to cart or not
+12:05:15:682 [main] INFO  Test1.GreenkartPractice - All the needed items are added to cart and stoping the searching for items
+12:05:15:682 [main] DEBUG Test1.GreenkartPractice - Clicking on  cart icon
+12:05:15:750 [main] INFO  Test1.GreenkartPractice - Clickied on cart  Icon
+12:05:15:750 [main] DEBUG Test1.GreenkartPractice - Clicking on Proceed to checkout button
+12:05:15:814 [main] INFO  Test1.GreenkartPractice - Clicked on proceed to checkout button
+12:05:15:817 [main] DEBUG Test1.GreenkartPractice - Wating for display of Enter promo code field
+12:05:16:369 [main] INFO  Test1.GreenkartPractice - Promocode text field displayed
+12:05:16:369 [main] DEBUG Test1.GreenkartPractice - Entering promocode
+12:05:16:429 [main] INFO  Test1.GreenkartPractice - Entered promo code
+12:05:16:429 [main] DEBUG Test1.GreenkartPractice - Clicking on Apply button
+12:05:16:477 [main] INFO  Test1.GreenkartPractice - Clicked on Apply button
+12:05:16:477 [main] DEBUG Test1.GreenkartPractice - Waiting for Order confirmation text
+12:05:21:679 [main] INFO  Test1.GreenkartPractice - Order placement text displayed
+12:07:35:543 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J2 as the default logging framework
+12:07:35:547 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+12:07:35:548 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+12:07:35:551 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4af0df05
+12:07:35:563 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+12:07:35:563 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 11
+12:07:35:564 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+12:07:35:565 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+12:07:35:566 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+12:07:35:566 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:253) ~[netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:247) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:112) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:221) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:200) [netty-common-4.1.68.Final.jar:4.1.68.Final]
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111) [async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90) [async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32) [async-http-client-2.12.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:114) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:57) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:163) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:77) [selenium-remote-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35) [selenium-chromium-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91) [selenium-chrome-driver-4.0.0.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46) [selenium-chrome-driver-4.0.0.jar:?]
+	at Test1.GreenkartPractice.main(GreenkartPractice.java:24) [bin/:?]
