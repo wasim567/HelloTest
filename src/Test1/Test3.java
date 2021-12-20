@@ -19,6 +19,10 @@ public class Test3 {
 		Thread.sleep(2000);
 		driver.findElement(By.id("confirmbtn")).click();
 		driver.switchTo().alert().dismiss();
+		
+		System.out.println("Hello1");
+		System.out.println("Hello2");
+		System.out.println("Hello3");
 	}
 
 }
